@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>Flex Gym - Self Defense Seminar Survey Form</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="SurveyProject.css"/>
+  </head>
+  <body>
+    <!--HEADER--------------------------------------------->
+    <header>
+      <h1 id="title">FLEX GYM</h1>
+      <p id="description">Thank you for participating in Flex Gym's Self Defense Seminar! We would love to hear about your experience.</p>
+    </header>
+    <!--FORM----------------------------------------------->
+    <form id="survey-form">
+      <!--INPUT-FIELD-1---------------------------------->
+      <section>
+        <fieldset>
+            <label id="reference-label" for="reference">How did you hear about us?</label>
+            <div class="ref-option">
+              <input id="social" name="reference" type="radio" value="Social Media"/> 
+              <label id="social-label" for="social">Social Media</label>
+            </div>
+            <div class="ref-option">
+              <input id="site" name="reference" type="radio" value="Flex Gym Website"/>
+              <label id="site-label" for="site">Flex Gym Website</label>
+            </div>
+            <div class="ref-option" >
+              <input id="other" name="reference" type="radio" value="Other"/>
+              <label id="other-label" for="other">Other</label>
+            </div>
+          <input id="other-text" name="reference" type="text"/>
+        </fieldset>
+        <br>
+        <fieldset>
+          <label id="motivation-label" for="motive">What motivated you to join our seminar?</label>
+          <div class="mot-option-frame">
+            <span class="mot-option">
+              <input id="safety" name="motive" type="checkbox" value="Defense Safety"/>
+              <label for="safety">Defense/Safety</label>
+            </span>
+            <span class="mot-option">
+              <input id="fitness" name="motive" type="checkbox" value="Fitness"/>
+              <label for="fitness">Fitness</label>
+            </span>
+            <span class="mot-option">
+              <input id="fun" name="motive" type="checkbox" value="Just for fun"/>
+              <label for="fun">Just for fun</label>
+            </span>
+          </div>
+        </fieldset>
+    </section>
+      <!--INPUT-FIELD-2---------------------------------->
+      <section>
+        <div class="rr-selection">
+          <label id="rating-label" for="rating">How would you rate your experience? </label>
+          <input id="rating" name="rating" type="number" min="0" max="10" placeholder="0-10"/>
+        </div>
+        <div class="rr-selection">
+          <label id="rec-label" for="recommendation">Would you recommend this event to others? </label>
+          <select id="recommendation" name="recommendation">
+            <option default>Y/N</option>
+            <option>Yes!</option>
+            <option>Not quite...</option>
+          </select>
+        </div>
+      </section>
+      <!--INPUT-FIELD-3---------------------------------->
+      <section>
+        <label id="feedback-label" for="feedback">We welcome feedback! Please feel free to share more about your experience.</label>
+        <textarea id="feedback" name="feedback" rows=5></textarea>
+      </section>
+      <!--INPUT-FIELD-4---------------------------------->
+      <section>
+        <label id="newsletter-prompt">Be notified about future events! Leave us your contact information if you'd be interested in joining our newsletter <b>♡</b></label>
+        <div class="user-info">
+          <div class="user-name-info">
+            <label id="name-label" for="name">Name: </label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe"/>
+          </div>
+          <div class="user-email-info">
+            <label id="email-label" for="email">Email: </label>
+            <input id="email" name="email" type="email" placeholder="jdoe@email.com"/>
+          </div>
+        </div>
+      </section>
+<!--SUBMIT-FIELD----------------------------------->
+      <input id="submit" name="submit" type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
