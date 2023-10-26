@@ -1,7 +1,7 @@
 body {
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgb(25,0,50) 20%, purple, rgb(25,0,50));
+    background: linear-gradient(rgb(25, 0, 50) 20%, purple, rgb(25, 0, 50));
 }
 header {
     width: 400px;
@@ -19,7 +19,7 @@ form {
     margin: 30px auto 40px;
     border: 5px solid white;
     padding: 20px;
-    background-color: rgba(180,180,255,50%);
+    background-color: rgba(180, 180, 255, 50%);
     color: white;
     box-shadow: -2px 0 20px hotpink, 2px 0 20px hotpink;
 }
@@ -29,12 +29,12 @@ section {
     flex-flow: column nowrap;
     align-content: stretch;
 }
-.subfield-sep {
-    padding: 0 0 0px;
-}
-input[type="text"], input[type="email"] {
-  border: purple solid 2px;
-  height: 1.75em;
+
+input[type="text"],
+input[type="email"] {
+    border: purple solid 2px;
+    height: 1.75em;
+    padding: 0 5px;
 }
 /*INPUT-FIELD-1*/
 fieldset {
@@ -67,7 +67,7 @@ input:checked {
     margin-bottom: 5px;
 }
 #recommendation {
-    width: 50px; 
+    width: 50px;
     height: 2em;
     border: solid 2px purple;
     border-radius: 2px;
@@ -95,15 +95,18 @@ textarea {
     flex-direction: column;
     justify-content: space-around;
 }
-.user-name-info, .user-email-info {
+.user-name-info,
+.user-email-info {
     display: flex;
     margin: 2px 0;
 }
-#name-label, #email-label {
+#name-label,
+#email-label {
     width: 80px;
     text-align: center;
 }
-#name, #email {
+#name,
+#email {
     /*width: 200px;*/
     flex-grow: 1;
     /*flex-basis: 200px;*/
@@ -116,6 +119,9 @@ textarea {
     height: 25px;
     border-radius: 5px;
     border: solid 2px purple;
-    color: rgb(25,0,50);
+    color: rgb(25, 0, 50);
     font-weight: bold;
+}
+#submit:hover {
+    cursor: pointer;
 }
